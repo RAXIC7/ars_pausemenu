@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ars VehicleShop</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="server-name">Arius Development</div>
+
+        <div class="disconnect" onclick="openConfermBox()">
+            <img src="images/quit-icon.png" alt="">
+            <div>Disconnect</div>
+        </div>
+
+        <div class="elements">
+            <div class="player-info element" id="player-info">
+                <h1>Player Info</h1>
+
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+
+                <div class="general-info">
+                    <p class="title">General Info</p>
+
+
+                    <div class="info-title">
+                        <h3 class="cash-title">Cash</h3>
+                        <h3 class="name-title">Name</h3>
+                        <h3 class="Job-title">Job</h3>
+                    </div>
+
+                    <div class="info">
+                        <p class="cash" id="cash">100$</p>
+                        <p class="name" id="name">Ali Echabi</p>
+                        <p class="job" id="job">Police</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="map element" id="map" onclick="openMap()">
+                <h1>Fivem Map</h1>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, possimus!</p>
+
+            </div>
+
+            <div class="settings element" id="settings" onclick="openSettings()">
+                <h1>Settings</h1>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, possimus!</p>
+
+                <img src="images/settings-model.png" alt="">
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="conferm-container" id="conferm-container">
+        <div class="box">
+            <h1>Are you sure?</h1>
+
+            <div>
+                <button class="conferm f-button" onclick="disconnect()">Conferm</button>
+                <button class="cancel f-button" onclick="cancelDisconnect()">Cancel</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+<script src="js/app.js"></script>
+
+</html>
