@@ -1,5 +1,11 @@
 local ESX = exports["es_extended"]:getSharedObject()
 
+RegisterNetEvent('esx:playerLoaded')
+AddEventHandler('esx:playerLoaded', function(xPlayer)
+	ESX.PlayerData = xPlayer
+	ESX.PlayerLoaded = true
+end)
+
 RegisterNetEvent('esx:setJob')
 AddEventHandler('esx:setJob', function(job)
     ESX.PlayerData.job = job
@@ -108,8 +114,6 @@ local function openPauseMenu()
 			local playerName = data.name
 			local playerMoney = data.money or 0
 			local playerJob = ESX.PlayerData.job.label
-
-			print(playerName, playerMoney, playerJob)
 
 			pauseMenuOpen = true
 			SetNuiFocus(true, true)
